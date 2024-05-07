@@ -1,12 +1,12 @@
 <?php
 
-$dbhost = "localhost"; // 127.0.0.1
+$dbhost = "172.31.24.227";
 $dbuser = "root";
-$dbpass = "";
+$dbpass = "my-secret-pw";
 $dbname = "progettoaws"; 
 $dbport = 3306;
 
-$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname, $dbport);
 if($conn->error){
     echo "Errore di connessione"; 
 }else{
